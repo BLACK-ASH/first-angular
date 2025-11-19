@@ -1,0 +1,17 @@
+<form class="flex flex-col gap-4" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label class="font-bold" for="firstName">First Name</label>
+    <input class="outline-1 m-2 " formControlName="firstName" type="text" />
+    <label class="font-bold" for="lastName">Last Name</label>
+    <input class="outline-1 m-2 " formControlName="lastName" type="text" />
+  </div>
+  <div>
+    <label class="font-bold" for="email">Email</label>
+    <input class="outline-1 m-2 " formControlName="email" type="email" />
+  </div>
+  <div>
+    <label class="font-bold" for="password">Password</label>
+    <input class="outline-1 m-2 " formControlName="password" type="password" />
+  </div>
+  <button class="p-2 rounded-2xl bg-sky-500 text-2xl text-white hover:bg-sky-300" type="submit">Submit</button>
+</form>
