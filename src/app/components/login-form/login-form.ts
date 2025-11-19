@@ -17,5 +17,8 @@ export class LoginForm {
 
   onSubmit() {
     console.log(this.loginForm.value);
+    alert(
+      `First Name: ${this.loginForm.value.firstName}\nLast Name: ${this.loginForm.value.lastName}\nEmail: ${this.loginForm.value.email}\nPassword: ${this.loginForm.value.password}`
+    )
   }
 }
